@@ -17,6 +17,6 @@ export const router = createBrowserRouter(
     },
   ],
   {
-    basename: '/entalaa.github.io/'
+    basename: '/entalaa/'
   }
 );

@@ -19,7 +19,9 @@ export function About() {
           <div className="flex justify-center items-center mb-6">
             <div className="w-24 h-px bg-gradient-to-r from-transparent to-primary"></div>
             <Moon className="w-8 h-8 text-primary mx-4" />
-            <div className="w-24 h-px bg-gradient-to-l from-transparent to-accent"></div>
+            <div className="w-24 h-px bg-gradient-to-l from-transparent to-primary"></div>
+
+            {/* <div className="w-24 h-px bg-gradient-to-l from-transparent to-accent"></div> */}
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
             ABOUT {OWNER_NAME.toUpperCase()}

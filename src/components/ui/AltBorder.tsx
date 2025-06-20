@@ -1,6 +1,6 @@
 import { cn } from "../../lib/utils"
 import { ReactNode } from "react"
-import { UNICODE_CHAR, UNICODE_CHAR_2, UNICODE_CHAR_3 } from "../../globals"
+import { UNICODE_CHAR_3 } from "../../globals"
 
 interface AltBorderProps {
   children: ReactNode
@@ -18,10 +18,10 @@ export function AltBorder({ children, className }: AltBorderProps) {
         <span className="animate-pulse" style={{ animationDelay: '0.2s' }}>{UNICODE_CHAR_3}</span>
       </div>
       <div className="absolute -top-3 -right-3 w-6 h-6 flex items-center justify-center text-purple-400/60 text-xl">
-        <span className="animate-pulse" style={{ animationDelay: '0.4s' }}>{UNICODE_CHAR}</span>
+        <span className="animate-pulse" style={{ animationDelay: '0.4s' }}>{UNICODE_CHAR_3}</span>
       </div>
       <div className="absolute -bottom-3 -left-3 w-6 h-6 flex items-center justify-center text-purple-400/60 text-xl">
-        <span className="animate-pulse" style={{ animationDelay: '0.6s' }}>{UNICODE_CHAR_2}</span>
+        <span className="animate-pulse" style={{ animationDelay: '0.6s' }}>{UNICODE_CHAR_3}</span>
       </div>
       <div className="absolute -bottom-3 -right-3 w-6 h-6 flex items-center justify-center text-red-400/60 text-xl">
         <span className="animate-pulse" style={{ animationDelay: '0.8s' }}>{UNICODE_CHAR_3}</span>

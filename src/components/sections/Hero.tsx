@@ -1,4 +1,4 @@
-import { Crown, Skull } from 'lucide-react';
+import { Crown, Moon } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { AltBorder } from '../ui/AltBorder';
 import { BRIEF_DESCRIPTION, STYLED_BRAND_NAME, UNICODE_CHAR, UNICODE_CHAR_2 } from '../../globals';
@@ -9,10 +9,10 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-radial from-primary/30 via-black to-black"></div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 text-primary/20 text-6xl">⸙</div>
-      <div className="absolute top-32 right-16 text-accent/20 text-4xl">☆</div>
-      <div className="absolute bottom-32 left-20 text-primary/20 text-5xl">✠</div>
-      <div className="absolute bottom-20 right-12 text-accent/20 text-6xl">⸙</div>
+      <div className="absolute top-20 left-10 text-primary/20 text-6xl">{UNICODE_CHAR_2}</div>
+      <div className="absolute top-32 right-16 text-accent/20 text-4xl">{UNICODE_CHAR}</div>
+      <div className="absolute bottom-32 left-20 text-primary/20 text-5xl">{UNICODE_CHAR_2}</div>
+      <div className="absolute bottom-20 right-12 text-accent/20 text-6xl">{UNICODE_CHAR_2}</div>
 
       <div className="relative z-10 text-center px-4">
         {/* Crown Icon */}
@@ -23,21 +23,33 @@ export function Hero() {
         {/* Brand Name with Alt Border */}
         <AltBorder className="inline-block p-4 sm:p-6 md:p-8 mb-8 w-full max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-primary via-accent to-primary-dark tracking-tight whitespace-nowrap overflow-hidden text-ellipsis scale-100 hover:scale-100" style={{ transition: 'transform 0.3s ease' }}>
-            <span className="inline-block w-full text-center">{STYLED_BRAND_NAME}</span>
+            <span
+              className="inline-block w-full text-center"
+              // style={{ fontFamily: 'Vortex' }}
+              style={{ fontFamily: 'AnandaBlack' }}
+            >
+              {STYLED_BRAND_NAME}
+            </span>
           </h1>
           <div className="flex justify-center items-center space-x-4 text-primary/60">
             <div className="w-16 h-px bg-gradient-to-r from-transparent to-primary"></div>
-            <Skull className="w-6 h-6" />
+            <Moon className="w-6 h-6" />
             <div className="w-16 h-px bg-gradient-to-l from-transparent to-primary"></div>
           </div>
-        </AltBorder>
-
-        {/* Tagline */}
-        <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          
+        <p className="text-xl md:text-2xl mb-2 pt-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
           <span className="bg-gradient-to-r from-primary via-accent to-primary text-transparent bg-clip-text">
             {BRIEF_DESCRIPTION}
           </span>
-        </p>
+        </p> 
+        </AltBorder>
+
+        {/* Tagline */}
+        {/* <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <span className="bg-gradient-to-r from-primary via-accent to-primary text-transparent bg-clip-text">
+            {BRIEF_DESCRIPTION}
+          </span>
+        </p> */}
 
         {/* Action Buttons */}
         <div className="flex flex-wrap justify-center gap-6">

@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/entalaa.github.io/',
+  base: '/entalaa/',
   plugins: [react()],
   publicDir: 'public',
   build: {

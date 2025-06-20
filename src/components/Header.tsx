@@ -102,8 +102,8 @@ export default function Header() {
               <button
                 key={item.name}
                 onClick={() => handleNavigation(item.href)}
-                className={`text-gray-300 hover:text-white transition-colors relative py-2
-                  ${isActive(item.href) ? 'text-white' : ''}
+                className={`text-content-secondary hover:text-content-primary transition-colors relative py-2
+                  ${isActive(item.href) ? 'text-content-primary' : ''}
                   after:content-[''] after:absolute after:bottom-0 after:left-0 
                   after:w-full after:h-0.5 after:bg-gradient-to-r 
                   after:from-primary after:to-accent
@@ -119,13 +119,13 @@ export default function Header() {
             variant="ghost"
             size="icon"
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-content-primary"
           >
             {isOpen ? <X /> : <Menu />}
           </Button>
         </div>
         {isOpen && (
-          <nav className="md:hidden py-4 space-y-4">
+          <nav className="md:hidden py-4 space-y-4 bg-background dark:bg-background-dark">
             {menuItems.map((item) => (
               <button
                 key={item.name}
@@ -133,8 +133,8 @@ export default function Header() {
                   handleNavigation(item.href)
                   setIsOpen(false)
                 }}
-                className={`block text-gray-300 hover:text-white transition-colors w-full text-left
-                  ${isActive(item.href) ? 'text-white border-l-2 border-primary pl-2' : ''}
+                className={`block text-content-secondary hover:text-content-primary transition-colors w-full text-left
+                  ${isActive(item.href) ? 'text-content-primary border-l-2 border-primary pl-2' : ''}
                 `}
               >
                 {item.name}

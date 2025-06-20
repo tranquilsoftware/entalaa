@@ -1,6 +1,6 @@
 export const UNICODE_CHAR = '☆'
 export const UNICODE_CHAR_2 = '✠'
-export const UNICODE_CHAR_3 = '⸙' //𖡼
+export const UNICODE_CHAR_3 = '☩' //𖡼
 // 💀
 /// BRAND
 export const OWNER_NAME = 'Entalaa'
@@ -27,7 +27,7 @@ export const INSTAGRAM_LINK = "https://www.instagram.com/" + INSTAGRAM_NAME;
 export const FACEBOOK_LINK = "https://www.facebook.com/" + FACEBOOK_NAME;
 // href links
 export const HREF_HOME_LINK = 'https://tranquilsoftware.github.io/entalaa/'; // todo change in prod
-export const HREF_PRODUCT_LINK = 'https://www.google.com/search?q=Insert_Melissa_Arts_Products_Website_When_Online'; // squarespace or shopify
+export const HREF_PRODUCT_LINK = 'https://www.google.com/search?q=Insert_Entalaa_Arts_Products_Website_When_Online'; // squarespace or shopify
 export const TRANQUILSOFTWARE_LINK = 'https://tranquilsoftware.com/'
 
 // owner details

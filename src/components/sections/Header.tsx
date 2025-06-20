@@ -10,7 +10,11 @@ export function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-primary/30">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-gothic font-bold text-primary">{BRAND_NAME}</div>
+        <div className="text-2xl font-gothic font-bold text-primary"
+        style={{ fontFamily: 'AnandaBlack' }}
+        >
+          {BRAND_NAME}
+        </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
@@ -28,7 +32,7 @@ export function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-gray-300 hover:text-primary"
+          className="md:hidden text-primary hover:text-primary"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
