@@ -9,9 +9,9 @@ export function Contact() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="text-center mb-16">
           <div className="flex justify-center items-center mb-6">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent to-accent"></div>
-            <Mail className="w-8 h-8 text-accent mx-4" />
-            <div className="w-24 h-px bg-gradient-to-l from-transparent to-accent"></div>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent to-primary"></div>
+            <Mail className="w-8 h-8 text-primary mx-4" />
+            <div className="w-24 h-px bg-gradient-to-l from-transparent to-primary"></div>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
             CONTACT

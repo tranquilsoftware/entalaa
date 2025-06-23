@@ -10,7 +10,7 @@ export const STYLED_BRAND_NAME = UNICODE_CHAR + " " + BRAND_NAME + " " + UNICODE
 export const FONT_BRAND_NAME = BRAND_NAME.toUpperCase()
 
 export const BRIEF_DESCRIPTION = UNICODE_CHAR_2 + ' Artist ' + UNICODE_CHAR_2
-export const ELEVATOR_PITCH = '#1 Girlypops in Australia'
+export const ELEVATOR_PITCH = '#1 Girlypop in Australia'
 export const GALLERY_DESC = 'A collection of sketches, and digital art'
 
 export const LOGO = 'https://i.imgur.com/CdnTZ20.png'; // 2048x2048 see views: https://imgur.com/a/AIJEMnd
