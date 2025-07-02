@@ -42,7 +42,7 @@ export function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-900/95 border-t border-red-900/30 py-4">
+        <div className="md:hidden bg-black border-t border-primary py-4"> {/*bg-background-dark/20 */}
           <nav className="flex flex-col space-y-4 px-4">
             {['Home', 'Portfolio', 'About', 'Contact'].map((item) => (
               <a
